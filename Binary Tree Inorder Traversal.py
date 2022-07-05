@@ -27,7 +27,7 @@ class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         # L V R
         if root is None:
-            return []
+            return 'This is Fake'
         res = []
         stack = []
         curr = root
@@ -39,5 +39,6 @@ class Solution:
             curr = stack.pop()
             res.add(curr.val)
             curr = curr.right
+        print('hello fixed')
 
         return res
